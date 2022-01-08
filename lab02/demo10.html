@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selector - Contextual</title>
+  <style type="text/css">
+    h1 { color: #cc3366; }
+    div { color: #3549fa; }
+    p { color: #66cc66; }
+
+    li div {
+      background-color: #e0b6da;
+      margin: 5px;
+    }
+
+    li > div { 
+      font-style: italic; 
+      font-weight: bold;
+      padding: 10px;
+    }
+
+    div span { background-color: black; }
+    div * {
+      border: 1px solid #cc3366;
+    }
+    
+  </style>
+</head>
+<body>
+  <h1>SELECTOR - Contextual</h1>
+  <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quibusdam harum, voluptate consequatur ipsam ratione aut! Distinctio maiores est, temporibus quisquam nesciunt vitae dignissimos? Tenetur vel maiores ad minima officiis.</div>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus molestias id fugit. Similique, nemo recusandae nam commodi saepe a, et numquam adipisci eveniet doloremque doloribus tenetur blanditiis dolorem dolor.</p>
+  <p>Iste consequatur quis suscipit eius sapiente! Officia iure iusto eum vitae corporis dolor, eius sit, voluptas praesentium similique beatae explicabo, maxime doloribus quasi eligendi eos consectetur quo voluptates a facere!</p>
+  <ul>
+    <li>
+      <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta labore expedita quam totam laudantium similique minima molestiae repellat fugit quos? Porro nisi debitis laudantium officiis esse totam architecto quo accusamus?</div>
+    </li>
+    <li>
+      <div>Rem nihil officiis earum impedit. In veritatis rerum doloribus voluptas provident, beatae expedita voluptates voluptatum. Reiciendis vitae nostrum consectetur, incidunt facere officia eos non excepturi est necessitatibus fugiat impedit quod!</div>
+    </li>
+    <li>
+      <div>Animi odit illum quidem consequatur fuga molestiae sapiente sed suscipit vel dignissimos accusantium, illo eum harum quisquam eius culpa repudiandae amet beatae ad natus quasi blanditiis fugiat sit. Asperiores, a?</div>
+    </li>
+    <li>
+      <section>
+        <div>Section -> DIV </div>
+      </section>
+    </li>
+  </ul>
+  <div>
+    <b>Lorem</b> ipsum dolor sit amet <i>consectetur</i> adipisicing elit. Veniam ipsa soluta pariatur <span>perspiciatis</span> nesciunt. Omnis, dolores molestias repellendus dignissimos id <del>consectetur</del> maxime animi delectus, deserunt nemo, quam odit nostrum debitis.</div>
+</body>
+</html>
