@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>This is H1 element</h1>
+  <div id="content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel fuga modi sit beatae harum libero impedit ad! Voluptatem corporis ea dignissimos at distinctio ullam assumenda. Sit id nam quos in?</div>
+  <h3 class="color-red">This is div with class Red</div>
+  <h1>This is H1 second element</h1>
+
+  <script type="text/javascript">
+    let h1_element = document.getElementsByTagName('h1');
+    console.log(h1_element);
+    console.log(h1_element[0].innerText);
+
+    let div_element = document.getElementById('content');
+    console.log(div_element.innerHTML);
+
+    let h3_element = document.querySelector('.color-red');
+    console.log(h3_element.outerHTML);
+  </script>
+</body>
+</html>
