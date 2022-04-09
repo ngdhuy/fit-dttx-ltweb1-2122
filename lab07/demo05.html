@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Form</h1>
+  <form action="#" method="get">
+    <fieldset>
+      <legend>User information</legend>
+        <div>
+          <lab for="txt01">Username</lab>
+          <input type="text" id="txt01" />
+        </div>
+        <div>
+          <lab for="text02">Password</lab>
+          <input type="password" id="txt02" />
+        </div>
+        <div>
+          <lab for="txt03">Full-name</lab>
+          <input type="text" id="txt03" />
+        </div>
+        <hr />
+        <div>
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+          <button type="button">Click me</button>
+        </div>
+    </fieldset>
+  </form>
+  
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('form input').css('border', '1px solid #cc3366');
+      $('form button[type=submit]').css('background-color','#cc8899');
+    });
+  </script>
+</body>
+</html>
