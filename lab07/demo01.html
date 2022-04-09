@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Selector</h1>
+  <p>This is paragraph 01</p>
+  <p class="red">This is paragraph 02</p>
+  <p>This is paragraph 03</p>
+  <p class="blue">This is paragraph 04</p>
+  <hr />
+  <ul>
+    <li>List item 1</li>
+    <li>List item 2</li>
+    <li class="blue">List item 3</li>
+    <li>List item 4</li>
+    <li>List item 5</li>
+  </ul>
+  <div id="footer">Footer of the page</div>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('h1').css('color', '#cc3366');
+      $('.blue').css('color', '#66cc88');
+      $('#footer').css('background-color', '#88ffaa');
+    });
+  </script>
+</body>
+</html>

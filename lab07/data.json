@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "iPhone 13 Pro Max",
+    "price": 1000
+  },
+  {
+    "id": 2,
+    "name": "iPad 12.9 Pro M1",
+    "price": 1200
+  },
+  {
+    "id": 3,
+    "name": "macBook Pro 16.2 M1 Pro",
+    "price": 2500
+  }
+]
