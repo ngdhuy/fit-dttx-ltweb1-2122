@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style type="text/css">
+    div {
+      width: 300px;
+      height: 200;
+      margin: 10px;
+      padding: 10px;
+      text-align: center;
+      line-height: 200px;
+      background-color: #cc3366;
+      color: #fff;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Animation</h1>
+
+  <button type="button" id="btnShow">Show</button>
+  <button type="button" id="btnHide">Hide</button>
+  <button type="button" id="btnFadeIn">Fade-in</button>
+  <button type="button" id="btnFadeOut">Fade-out</button>
+  <button type="button" id="btnToggle">Toggle</button>
+
+  <hr />
+  <div>Content</div>
+  
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('#btnShow').click(function(){
+        $('div').show(300);
+      });
+
+      $('#btnHide').click(function(){
+        $('div').hide(500);
+      });
+
+      $('#btnFadeIn').click(function(){
+        $('div').fadeIn(800);
+      });
+
+      $('#btnFadeOut').click(function(){
+        $('div').fadeOut(1000);
+      });
+
+      $('#btnToggle').click(function(){
+        $('div').toggle(2000);
+      });
+    });
+  </script>
+</body>
+</html>
