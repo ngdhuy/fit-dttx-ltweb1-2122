@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>GET - Method</h1>
+
+  <button type="button">Load Data</button>
+  <hr/>
+  <ul></ul>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('button').click(function(){
+        $.get("data.json",function(data){
+          data.forEach(item => {
+            let li_node = document.createElement('li');
+            let text_node = document.createTextNode(item.id + ' - ' + item.name);
+            li_node.append(text_node);
+            $('ul').append(li_node);
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>
